@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main() {
+    int level;
+    printf("Enter water level (0-100): ");
+    scanf("%d", &level);
+
+    if(level < 30)
+        printf("Low Water Level\n");
+    else if(level <= 70)
+        printf("Medium Water Level\n");
+    else
+        printf("Tank Full\n");
+    return 0;
+}
